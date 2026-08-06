@@ -362,7 +362,7 @@ export default function ProfilePage() {
 
 
           {/* ══ GITHUB CARD ════════════════════════════════════════ */}
-          {/*
+          {false && (
           <motion.div initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} transition={{ delay:0.2 }}>
             <div style={{ ...S.card, padding:28 }}>
               <div style={{ position:'absolute', top:0, left:'15%', right:'15%', height:1,
@@ -511,7 +511,7 @@ export default function ProfilePage() {
                   </button>
 
                   {ghExpanded && (
-                    <div style={{ display:'flex', flexDirection:'column', gap:8, marginTop:10 }}>
+                    <div style={{ display:'flex', flexDirection: 'column', gap:8, marginTop:10 }}>
                       {ghData.repos?.slice(0, 15).map(repo => (
                         <a key={repo.name} href={repo.url} target="_blank" rel="noopener"
                           style={{ display:'flex', alignItems:'center', gap:12, padding:'10px 14px', borderRadius:10,
@@ -542,7 +542,7 @@ export default function ProfilePage() {
               )}
             </div>
           </motion.div>
-          */}
+          )}
         </div>
       </div>
 
