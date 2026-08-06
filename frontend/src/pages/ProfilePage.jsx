@@ -362,6 +362,7 @@ export default function ProfilePage() {
 
 
           {/* ══ GITHUB CARD ════════════════════════════════════════ */}
+          {/*
           <motion.div initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} transition={{ delay:0.2 }}>
             <div style={{ ...S.card, padding:28 }}>
               <div style={{ position:'absolute', top:0, left:'15%', right:'15%', height:1,
@@ -541,6 +542,7 @@ export default function ProfilePage() {
               )}
             </div>
           </motion.div>
+          */}
         </div>
       </div>
 
