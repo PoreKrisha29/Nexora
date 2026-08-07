@@ -33,6 +33,7 @@ import TermsPage from '@/pages/TermsPage'
 import AboutPage from '@/pages/AboutPage'
 import ContactPage from '@/pages/ContactPage'
 import CommandPalette from '@/components/ui/CommandPalette'
+import DevMentorWidget from '@/components/ui/DevMentorWidget'
 
 function ProtectedRoute({ children }) {
   const { isAuthenticated, loading } = useAuth()
@@ -154,6 +155,8 @@ function AppRoutes() {
     <div style={{ minHeight: '100vh', background: 'var(--bg-color)' }}>
       {/* Global Command Palette — Ctrl+K */}
       <CommandPalette />
+      {/* ── Floating Dev Mentor Bottom-Right Widget ── */}
+      <DevMentorWidget />
       {/* ── Layout layer ── */}
       {isPublicPage && <LandingNavbar />}
       {showSidebar  && (

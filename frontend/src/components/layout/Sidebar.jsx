@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom'
 import {
   Menu, X, Zap, ChevronDown, ChevronLeft, ChevronRight,
   LogOut, User, Trophy, Sun, Moon, Search, Users,
-  Swords, FlaskConical, Map, Palette, BarChart3, BrainCircuit, FileText,
+  Swords, FlaskConical, Map, Palette, BarChart3, FileText,
   Gamepad2, Bell, CheckSquare, Trash2, BookMarked, Cpu, MapPin, GitPullRequestArrow
 } from 'lucide-react'
 import { useAuth } from '@/context/AuthContext'
@@ -24,7 +24,6 @@ const NAV_LINKS = [
   { to: '/revision',   label: 'Revision Hub',  Icon: BookMarked,          tourId: 'tour-revision' },
   { to: '/showcase',   label: 'Showcase',      Icon: Palette,             tourId: 'tour-showcase' },
   { to: '/progress',   label: 'Progress',      Icon: BarChart3,           tourId: 'tour-progress' },
-  { to: '/mentor',     label: 'Dev Mentor',    Icon: BrainCircuit,        tourId: 'tour-mentor' },
 ]
 
 const RANK_COLOR = { explorer:'#94a3b8', builder:'#34d399', creator:'#60a5fa', architect:'#a78bfa', legend:'#fbbf24' }
